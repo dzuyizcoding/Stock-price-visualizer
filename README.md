@@ -27,18 +27,29 @@ The program retrieves market data using the **yFinance API**, processes the data
 The program generates two outputs:
 
 **1. CSV Dataset**
-Contains structured historical price data for the selected stocks.
+### Example CSV Output
+
+The program exports stock price data to a CSV file in the following format:
+
+```csv
+Date,0001,0002,0003,0005
+2026-02-23,64.25,77.40,7.69,135.90
+2026-02-24,62.55,77.00,7.69,135.30
+2026-02-25,62.00,75.05,7.62,142.70
+2026-02-26,64.80,73.40,7.53,145.00
+2026-02-27,64.40,74.20,7.61,147.30
+2026-03-02,62.65,74.15,7.56,139.70
+2026-03-03,62.65,74.80,7.70,135.80
+2026-03-04,59.85,73.35,7.54,130.80
+2026-03-05,61.15,74.55,7.53,133.90
+2026-03-06,60.70,74.45,7.52,133.40
 
 **2. Chart Visualization**
 
 A multi-panel chart displaying price movements for each stock across the last 10 trading days.
 
-Example stocks visualized:
+<img width="2069" height="1029" alt="stock_prices" src="https://github.com/user-attachments/assets/d09f0f99-97d4-474d-b6b3-f69b6e5b6da1" />
 
-- CKH Holdings (0001.HK)
-- CLP Holdings (0002.HK)
-- HK & China Gas (0003.HK)
-- HSBC Holdings (0005.HK)
 
 ---
 
@@ -49,10 +60,15 @@ Clone the repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/stock-price-visualizer.git
 cd stock-price-visualizer
-Install dependencies:
+```
+## Install dependencies:
+```bash
 pip install pandas matplotlib yfinance
-▶️ Run the Program
-pythonstock_price_visualizer.py
+```
+## ▶️ Run the Program
+``` bash
+python stock_price_visualizer.py
+```
 ## 📂 Project Structure
 stock-price-visualizer
 │
